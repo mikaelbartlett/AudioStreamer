@@ -1,15 +1,34 @@
 Pod::Spec.new do |s|
-  s.name     = 'AudioStreamer'
-  s.version  = '1.0.0'
-  s.summary  = 'A streaming audio player class (AudioStreamer) for Mac OS X and iPhone.'
-  s.homepage = 'https://github.com/mikaelbartlett/AudioStreamer.git'
-  s.author   = { 'Ullrich Schäfer' => 'ullrich@soundcloud.com' }
 
+  s.name         = "AudioStreamer"
+  s.version      = "1.0.0"
+  s.summary      = "A short description of AudioStreamer."
 
-  s.source   = { :git => 'https://github.com/mikaelbartlett/AudioStreamer.git'}
+  s.description  = <<-DESC
+                   A longer description of AudioStreamer in Markdown format.
 
-  s.source_files = 'Classes/{AudioStreamer,UIDevice+Hardware}.{h,m}',
+                   * Think: Why did you write this? What is the focus? What does it do?
+                   * CocoaPods will be using this to generate tags, and improve search results.
+                   * Try to keep it short, snappy and to the point.
+                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   DESC
+
+  s.homepage     = "https://github.com/DigitalDJ/AudioStreamer"
+  s.license      = 'Not found'
+  
+  s.author       = { 'Ullrich Schäfer' => 'ullrich@soundcloud.com' }
+
+  s.platform     = :ios, :osx
+
+  s.ios.deployment_target = '5.0'
+  #s.osx.deployment_target = '10.7'
+
+  s.source       = { :git => "https://github.com/DigitalDJ/AudioStreamer.git" }
+
+  s.source_files = 'Classes/{AudioStreamer,UIDevice+Hardware}.{h,m}'
 
   s.frameworks = 'CFNetwork', 'AudioToolbox', 'Foundation', 'AVFoundation', 'MediaPlayer'
+
+  # s.requires_arc = true
 
 end
