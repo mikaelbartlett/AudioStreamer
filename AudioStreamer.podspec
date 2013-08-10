@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/{AudioStreamer,UIDevice+Hardware}.{h,m}',
 
-  s.framework = 'CFNetwork', 'AudioToolbox', 'Foundation', 'AVFoundation', 'MediaPlayer'
+  s.frameworks = 'CFNetwork', 'AudioToolbox', 'Foundation', 'AVFoundation', 'MediaPlayer'
 
 end
