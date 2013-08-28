@@ -211,6 +211,8 @@ extern NSString * const ASUpdateMetadataNotification;
 
 - (CGPoint)currentVolume;
 
+- (void)setVolume:(CGFloat)level;
+
 
 @end
 

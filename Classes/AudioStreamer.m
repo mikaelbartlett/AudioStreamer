@@ -2439,6 +2439,14 @@ cleanup:
 	return volume;
 }
 
+- (void)setVolume:(CGFloat)level
+{
+	OSStatus errorMsg = AudioQueueSetParameter(audioQueue, kAudioQueueParam_Volume, Level);
+	if (errorMsg) {
+			NSLog(@"AudioQueueSetParameter returned %d when setting the volume.", errorMsg);
+	}
+}
+
 @end
 
 
